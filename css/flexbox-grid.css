@@ -83,7 +83,7 @@ html, body {
 /* breakpoints */
 
 /* small to medium */
-@media screen and (min-width: 380px) {
+@media screen and (min-width: 270px) {
   .sm-auto {
     flex: 1;
   }

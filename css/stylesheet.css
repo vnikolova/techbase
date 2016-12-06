@@ -1,6 +1,29 @@
+body {
+  font-family: 'Titillium Web', sans-serif;
+}
+
 .header-wrapper {
-  background-color: blue;
-  padding: 8px;
+  border-bottom: 2px solid black;
   text-transform: uppercase;
+  color: black;
+}
+
+.nav-link {
+  color: black;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.nav-link:hover {
+  background-color: black;
   color: white;
+  height: auto;
+}
+
+#loginLink {
+  text-align: right;
+  cursor: pointer;
+  padding-right: 16px;
 }
