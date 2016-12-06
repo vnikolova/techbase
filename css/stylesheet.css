@@ -1,11 +1,16 @@
 body {
   font-family: 'Titillium Web', sans-serif;
 }
-
+/* navigation styles */
 .header-wrapper {
-  border-bottom: 2px solid black;
   text-transform: uppercase;
   color: black;
+  background-color: white;
+  position: fixed;
+  z-index: 1000;
+  right: 0;
+  left:0;
+  top: 0;
 }
 
 .nav-link {
@@ -17,13 +22,25 @@ body {
 }
 
 .nav-link:hover {
-  background-color: black;
-  color: white;
-  height: auto;
+  color: lightgreen;
 }
 
 #loginLink {
   text-align: right;
-  cursor: pointer;
   padding-right: 16px;
+}
+
+/* front page */
+.front-intro{
+  background-image: url('../assets/background.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
 }
