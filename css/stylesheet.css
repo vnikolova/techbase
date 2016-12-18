@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
 body {
   font-family: 'Raleway', sans-serif;
 }
+
 /* navigation styles */
 .header-wrapper {
   width: 70%;
@@ -34,7 +37,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 550px;
+  height: 500px;
 }
 
 .upcoming-event {
@@ -75,7 +78,125 @@ body {
   color: white;
   padding: 8px;
 }
+.full {
+  min-width: 100%;
+}
 .button:hover {
   background-color: white;
   color: black;
+}
+
+.hover-green:hover {
+  background-color: rgba(22, 160, 133,0.7);
+}
+.hover-purple:hover{
+  background-color: rgba(155, 89, 182,0.7);
+}
+/* event page */
+
+.event-intro {
+  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('../img/events/Developer-Week.png');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 350px;
+}
+.event-box {
+  margin-top: 100px;
+}
+.event-intro button {
+  margin-top: 8px;
+}
+#eventTitle {
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+}
+.event-svg {
+  width: 32px;
+  height: 32px;
+}
+span, img {
+  vertical-align: middle;
+  margin: 0 auto;
+}
+.event-div {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+/* events page */
+.events-head {
+  background-image: url('../img/background.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 200px;
+}
+.events-filters {
+  margin-top: 100px;
+}
+
+/* search field */
+#custom-search-input{
+    padding: 3px;
+    border: solid 1px #E4E4E4;
+    border-radius: 9999px;
+    background-color: #fff;
+}
+
+#custom-search-input input{
+    border-radius: 9999px;
+    border: 0;
+    width: 100%;
+    box-shadow: none;
+}
+
+#custom-search-input button{
+    margin: 2px 0 0 0;
+    background: none;
+    box-shadow: none;
+    border: 0;
+    color: #666666;
+    padding: 0 8px 0 10px;
+    border-left: solid 1px #ccc;
+}
+
+#custom-search-input button:hover{
+    border: 0;
+    box-shadow: none;
+    border-left: solid 1px #ccc;
+}
+
+#custom-search-input .glyphicon-search{
+    font-size: 16px;
+}
+
+/* event results */
+
+.event-result {
+  padding: 8px;
+  border: 2px solid black;
+  margin-top: 16px;
+  cursor: pointer;
+}
+
+.event-result:hover {
+  background-color: rgba(22, 160, 133,0.7);
+}
+.event-image {
+  width: 60px;
+  height: auto;
+  display: table-cell;
+  vertical-align: middle;
+}
+.event-date {
+  text-align: center;
+}
+
+.event-title {
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
 }

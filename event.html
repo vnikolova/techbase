@@ -1,0 +1,81 @@
+<!-- main layout for all public pages -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>TechBase</title>
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/flexbox-grid.css">
+  </head>
+  <body>
+    <div class="header"></div>
+
+    <div class="content events">
+      <div class="event-intro row center"> <!-- background image -->
+        <div class=" event-box lg-1of3 sm-1of2 align-center"> <!-- title and buttons -->
+          <div class="event-title row">
+            <div class="col">
+              <h1 id="eventTitle"></h1>
+            </div>
+            <div class="col">
+              <button type="button" class="button full hover-purple">Become Partner</button>
+              <button type="button" class="button full hover-green">Buy Tickets</button>
+            </div>
+          </div>
+        </div>
+      </div> <!-- end of intro -->
+
+      <!-- description and details -->
+      <div class="row center">
+        <div class="lg-1of2 sm-6of8 align-center">
+          <div class="event-div row"> <!-- details -->
+            <div class="col-1of3">
+              <img class="event-svg" src="img/svg/date.svg" alt="Date" />
+              <span id="dateText"></span>
+            </div>
+            <div class="col-1of3">
+              <img class="event-svg" src="img/svg/time.svg" alt="Time" />
+              <span id="timeText"></span>
+            </div>
+            <div class="col-1of3">
+              <img class="event-svg" src="img/svg/placeholder.svg" alt="Place" />
+              <span id="placeText"></span>
+            </div>
+          </div> <!-- end of row for details -->
+          <div class="row center event-div">
+            <div id="descriptionText" class="col-full">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer"></div>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="scripts/main.js"></script>
+    <script>
+    $( document ).ready(function() {
+      var urlParams = new URLSearchParams(window.location.search);
+      var name = urlParams.get('name'); // get the name from url
+
+      $.getJSON("./db/events.json", function(data){
+        //append correct data to the page
+          var result = data[name];
+          $('#eventTitle').text(result.title);
+          $('#dateText').text(result.date);
+          $('#timeText').text(result.time);
+          $('#placeText').text(result.location);
+          $('#descriptionText').text(result.description);
+
+      });
+
+    });
+    </script>
+  </body>
+</html>

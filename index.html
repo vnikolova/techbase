@@ -6,18 +6,54 @@
     <title>TechBase</title>
     <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/stylesheet.css">
     <link rel="stylesheet" href="css/flexbox-grid.css">
+
   </head>
   <body>
     <div class="header"></div>
 
     <div class="content">
+      <div class="front-intro row center">
+        <div class="upcoming-event col-1of4 align-center sm-1of2">
+          <h1>UPCOMING EVENT</h1>
+          <div class="row">
+            <div class="col-1of3">
+              <img src="img/svg/calendar.svg" class="date-img" alt="" />
+            </div>
+            <div class="col-2of3">
+              <h2 class="bold">DEVELOPER WEEK</h2>
+              <p>
+                10th February at 11:00 in Copenhagen <br>
+              </p>
+              <button id="upcomingEventBtn" type="button" class="button">Read More</button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="row center">
+      <h2>Our Partners</h2>
+
+    </div>
+      <div class="row partner-list">
+       <div class="col-1of3">
+         <img class="partner-logo" src="img/startupweekend-logo.png" alt="Startup Weekend" />
+       </div>
+       <div class="col-1of3">
+         <img class="partner-logo" src="img/techcrunch-logo.png" alt="Startup Weekend" />
+       </div>
+       <div class="col-1of3">
+         <img class="partner-logo web-summit" src="img/websummit-logo.png" alt="Startup Weekend" />
+       </div>
+      </div>
 
     </div>
     <div class="footer"></div>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="scripts/main.js"></script>
   </body>
 </html>
