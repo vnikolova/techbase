@@ -1,25 +1,72 @@
-<div class="events-head row center">
-  <!-- search field, calendar filter and submit button -->
-  <div class="events-filters lg-1of2 sm-auto">
-    <div class="row">
-      <div class="col-full"> <!-- search -->
-        <div id="custom-search-input" class="full">
-          <div class="input-group full">
-              <input type="text" class="form-control input-lg" placeholder="Buscar" />
-              <span class="input-group-btn">
-                  <button class="btn btn-info btn-lg" type="button">
-                      <i class="glyphicon glyphicon-search"></i>
-                  </button>
-              </span>
+<!-- main layout for all public pages -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>TechBase</title>
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/flexbox-grid.css">
+
+  </head>
+  <body class="fade-in fast">
+    <div class="header"></div>
+
+    <div class="content">
+      <div class="events-head row center">
+        <!-- search field, calendar filter and submit button -->
+        <div class="events-filters lg-1of2 sm-auto">
+          <div class="row">
+            <div class="col-full"> <!-- search -->
+              <div id="custom-search-input" class="full">
+                <div class="input-group full">
+                    <input type="text" class="form-control input-lg" placeholder="Buscar" />
+                    <span class="input-group-btn">
+                        <button class="btn btn-info btn-lg" type="button">
+                            <i class="glyphicon glyphicon-search"></i>
+                        </button>
+                    </span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</div>
-<!-- all events listed here -->
-<div class="row center">
-  <div id="eventsList" class="col-2of3 align-center">
+      <!-- all events listed here -->
+      <div class="row center">
+        <div id="eventsList" class="col-2of3 align-center">
 
-  </div>
-</div>
+        </div>
+      </div>
+    </div>
+    <div class="footer"></div>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="scripts/main.js"></script>
+    <script>
+    $.getJSON("./db/events.json", function(events){
+      var html = "";
+
+      $.each(events, function (key, val ) {
+        var tags = "";
+        //get all tags and add to div
+          $.each(val.tags, function(key, val){
+            tags += '<a href="events.html?tagged='+val+'" class="tag">'+val+'</a>';
+          });
+
+          html += '<div id="'+key+'"class="event-result row"><div class="event-result-left col-1of4"><img class="event-image"src="img/svg/date.svg" alt="" /><h3 class="event-date">'+
+          val.date+'</h3></div><div class="event-result-info col-3of4"><h2 class="event-title">'+
+          val.title+'</h2><p class="tags"><a class="tag">'+
+          val.location+'</a>'+tags+'</p><img src="img/svg/time.svg" class="event-svg" alt="" /><span>'+
+          val.time+'</span><img src="img/svg/seat.svg" class="event-svg" alt="" /><span>'+
+          val.seats+'</span></div></div>'
+       });
+        $('#eventsList').html(html);
+
+    });
+    </script>
+  </body>
+</html>
