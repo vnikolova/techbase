@@ -177,14 +177,28 @@ span, img {
 /* event results */
 
 .event-result {
-  padding: 8px;
-  border: 2px solid black;
-  margin-top: 16px;
-  cursor: pointer;
+  margin-top: 24px;
 }
-
-.event-result:hover {
-  background-color: rgba(22, 160, 133,0.7);
+.event-result-info {
+  background-color: #F4F4F4;
+  padding: 16px;
+  cursor: pointer;
+  margin-left: -100px;
+  padding-left: 110px;
+  padding-right: 20px;
+  justify-content: space-between;
+  border-radius: 15px;
+}
+.event-result-left {
+  z-index: 1000;
+  padding-top: 50px;
+	height: 200px;
+	width: 200px;
+	border-radius: 100px;
+	background-color: white;
+}
+.event-result-info:hover {
+  background-color: #EFEFEF;
 }
 .event-image {
   width: 60px;
@@ -199,4 +213,86 @@ span, img {
 .event-title {
   text-transform: uppercase;
   font-family: 'Oswald', sans-serif;
+}
+.tags a{
+  border:1px solid #DDD;
+  display:inline-block;
+  color:#717171;
+  background:#FFF;
+  -webkit-box-shadow:0 1px 1px 0 rgba(180,180,180,0.1);
+  box-shadow:0 1px 1px 0 rgba(180,180,180,0.1);
+  -webkit-transition:all .1s ease-in-out;
+  -moz-transition:all .1s ease-in-out;
+  -o-transition:all .1s ease-in-out;
+  -ms-transition:all .1s ease-in-out;
+  transition:all .1s ease-in-out;
+  border-radius:2px;
+  margin:0 3px 6px 0;
+  padding:5px 10px
+}
+.tags a:hover{
+  border-color:#08C;
+}
+
+/* calendar styles */
+.calendar {
+  height: 100px;
+}
+.calendar-header
+{
+	padding-left: 20px;
+	padding-right: 20px;
+	height: 70px;
+	color: black;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.calendar-content
+{
+	display:flex;
+	flex-direction: column;
+  width: 80%;
+  margin-left: 10%;
+}
+.calendar-row
+{
+	display:flex;
+	flex-direction: row;
+	flex:1;
+}
+.calendar-item
+{
+	flex: 1;
+  margin: 2px;
+  background-color: #F4F4F4;
+	min-height: 12vh;
+	min-width: 32px;
+}
+.calendar-item-disabled
+{
+	background-color: #CDCDCD;
+	color: #d9d9d9;
+}
+.calendar-item-header
+{
+	flex: 1;
+	text-align: center;
+  background-color: #EFEFEF;
+	color: black;
+}
+.calendar-item-header > h3 {
+  font-size: 16px;
+}
+.calendar-item > h3
+{
+  font-size: 16px;
+	margin: 5px;
+	float: right;
+}
+.imgtest
+{
+	width: 100%;
+	height: auto;
 }

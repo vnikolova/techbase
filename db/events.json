@@ -3,14 +3,18 @@
     "title": "Developer Week 2017",
     "date": "10 Jan 2017",
     "time": "11:00",
+    "logo": "dev-week.jpg",
+    "tags": ["JavaScript", "HTML", "development","web", "Node.js"],
     "seats": "unlimited",
     "description": "Echo park brunch blog cliche bespoke microdosing, skateboard vegan waistcoat raclette yr kombucha pickled selvage raw denim. Edison bulb keytar ethical roof party green juice, 8-bit mlkshk literally. Lyft pinterest seitan bespoke, authentic kinfolk selfies offal iceland succulents vice deep v VHS fixie ramps. Next level chia butcher YOLO. XOXO DIY lumbersexual brunch four loko, snackwave irony tousled. Meggings offal quinoa, umami forage brooklyn cred shoreditch. Try-hard gochujang poke, beard brooklyn health goth mixtape VHS.",
     "location": "Copenhagen, Denmark"
   },
   "TechCrunch" : {
     "title": "TechCrunch Hackaton",
-    "date": "24 Feb 2017",
+    "date": "24 Jan 2017",
     "time": "12:00",
+    "logo": "techcrunch-logo.png",
+    "tags": ["startup", "business", "development","JavaScript", "competition"],
     "seats": "300",
     "description": "Lorizzle we gonna chung own yo' sit amizzle, go to hizzle adipiscing black. Nullizzle mammasay mammasa mamma oo sa velizzle, crazy volutpizzle, bizzle quizzle, gravida vizzle, funky fresh. Gangsta mah nizzle shizzlin dizzle. Cool that's the shizzle. Dope at sure check it out turpis fo shizzle bow wow wow. Maurizzle pellentesque stuff izzle da bomb. Ma nizzle hizzle tortizzle. Pellentesque fo shizzle mah nizzle fo rizzle, mah home g-dizzle rhoncus nisi. In nizzle habitasse platea dictumst. Dang dope. Curabitur tellizzle shit, pretizzle crackalackin, ghetto ac, eleifend vitae, nunc. Bow wow wow suscipizzle. Bizzle semper break it down doggy cool.",
     "location": "San Francisco"
