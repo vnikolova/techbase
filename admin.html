@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>TechBase</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="css/flexbox-grid.css">
+  </head>
+  <body style="overflow-x:hidden;">
+    <!-- <div class="header"></div> -->
+
+    <div class="content adminContent">
+      <div class="row">
+        <div class="lg-full admin logo sm-full topSide">
+          <h2>
+            <a href="admin.html"><img src="img/svg/logo.svg" style="width: 150px;"  alt=""></a>
+          </h2>
+          <h1></h1>
+          <button type="button" class="btn logOut"><span class="glyphicon glyphicon-off" aria-hidden="true"></span> log out</button>
+        </div>
+          <!-- DASHBOARD -->
+          <div class="dashboard lg-full">
+            <div class="lg-full admin bottomSide">
+              <div class="panels">
+                <div class="panel panel-warning">
+                  <div class="panel-heading">MEMBERS<span class="badge">7</span></div>
+                  <div class="panel-body">
+                    <div class="btn-group">
+                     <button type="button" class="btn addNewBtn" id="displayMembers">Show All <span class=" glyphicon glyphicon-menu-right" aria-hidden="true"></span></button>
+                     <!-- <button type="button" class="btn addNewBtn">Add new <span class=" glyphicon glyphicon-plus" aria-hidden="true"></span></button> -->
+                    </div>
+                    <h4>Recently added:</h4>
+                  <table class="table table-hover">
+                    <th>name</th>
+                    <th>last name</th>
+                    <tr>
+                      <td>patricia</td>
+                      <td>rumanovska</td>
+                    </tr>
+                    <tr>
+                      <td>viktoria</td>
+                      <td>nikolova</td>
+                    </tr>
+                    <tr>
+                      <td>dzacek</td>
+                      <td>kizinski</td>
+                    </tr>
+                    <tr>
+                      <td>kasia</td>
+                      <td>dolar</td>
+                    </tr>
+                  </table>
+                  <div id="addMember"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="panels">
+                <div class="panel panel-success">
+                  <div class="panel-heading">EVENTS <span class="badge">10</span></div>
+                  <div class="panel-body">
+                    <div class="btn-group">
+                     <button type="button" class="btn addNewBtn" id="displayEvents">Show All <span class=" glyphicon glyphicon-menu-right" aria-hidden="true"></span></button>
+                     <!-- <button type="button" class="btn addNewBtn">Add new <span class=" glyphicon glyphicon-plus" aria-hidden="true"></span></button> -->
+                    </div>
+                    <h4>Upcoming events:</h4>
+                    <table class="table table-hover">
+                      <th>title</th>
+                      <th>date</th>
+                      <tr>
+                        <td>web dev</td>
+                        <td>12/10/2017</td>
+                      </tr>
+                      <tr>
+                        <td>JavaScript for dummies</td>
+                        <td>09/03/2017</td>
+                      </tr>
+                      <tr>
+                        <td>PHP from the heart</td>
+                        <td>10/03/2016</td>
+                      </tr>
+                      <tr>
+                        <td>iOS/Android course</td>
+                        <td>11/11/2011</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="panels">
+                <div class="panel panel-info">
+                  <div class="panel-heading">PARTNERS <span class="badge">20</span></div>
+                  <div class="panel-body">
+                    <div class="btn-group">
+                     <button type="button" class="btn addNewBtn" id="displayPartners">Show All <span class=" glyphicon glyphicon-menu-right" aria-hidden="true"></span></button>
+                     <!-- <button type="button" class="btn addNewBtn">Add new <span class=" glyphicon glyphicon-plus" aria-hidden="true"></span></button> -->
+                    </div>
+                    <h4>Recently added:</h4>
+                    <table class="table">
+                    <tr>
+                      <td><img src="img/techcrunch-logo.png" alt="" height="60px;" >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><img src="img/startupweekend-logo.png" alt="" height="50px;" >
+                        <img src="img/websummit-logo.png" alt="" height="60px;" >
+                      </td>
+                    </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <!-- footer-->
+        <div class="lg-full footer">
+          <i><p>&copy; 12/2016 - school project -  interface design - KEA<p></i>
+        </div>
+
+      </div>
+    </div>
+    <div class="footer"></div>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="scripts/main.js"></script>
+
+  </body>
+</html>

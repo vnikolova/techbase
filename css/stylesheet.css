@@ -28,6 +28,18 @@
   -moz-animation-delay: 0.1s;
   animation-delay: 0.1s;
 }
+
+.fade-scale {
+  transform: scale(0);
+  opacity: 0;
+  -webkit-transition: all .25s linear;
+  -o-transition: all .25s linear;
+  transition: all .25s linear;
+}
+.fade-scale.in {
+  opacity: 1;
+  transform: scale(1);
+}
 body {
   font-family: 'Raleway', sans-serif;
 }
@@ -323,4 +335,74 @@ span, img {
 {
 	width: 100%;
 	height: auto;
+}
+
+/* login begin */
+.wrapper {
+  background-color: rgba(0,0,0,0.5);
+  height: 100%;
+}
+
+#loginPageWrapper {
+background-color: #E4E4E4;
+}
+#register{
+  display: none;
+}
+.alert{
+  display: none;
+  text-align: center;
+  font-size: 15px;
+}
+
+.loginLogo{
+  text-align: center;
+  margin: 0 auto;
+  vertical-align: middle;
+  margin-top: 120px;
+  margin-bottom: 32px;
+}
+
+.loginLogo img {
+  width: 150px;
+  height: auto;
+
+}
+.logoTxtProfile{
+  letter-spacing:4px;
+  text-transform: uppercase;
+  color:white;
+  font-size: 18px;
+  text-align: center;
+  margin-left:-30px;
+
+}
+.buttons{
+  background-color: #3aaaab;
+}
+.loginBtnTxt{
+  color:white;
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+.buttons:hover{
+  background-color: #236f70;
+  color:white;
+}
+.box{
+  background-color: white;
+  padding: 20px;
+  margin-top:0px;
+}
+.login{
+  background-color: #3aaaab;
+}
+.register{
+  float:right;
+  margin-right:20px;
+}
+/* end login */
+.modal {
+  top: 150px;
 }

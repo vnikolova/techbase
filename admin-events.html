@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>TechBase</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="css/flexbox-grid.css">
+  </head>
+  <body style="overflow-x:hidden;">
+    <!-- <div class="header"></div> -->
+    <div class="content">
+      <div class="row">
+        <div class="lg-full admin logo sm-full topSide">
+          <h2>
+            <a href="admin.html"><img src="img/svg/logo.svg" style="width: 150px;"  alt=""></a>
+          </h2>
+          <h1></h1>
+          <button type="button" class="btn logOut"><span class="glyphicon glyphicon-off" aria-hidden="true"></span> log out</button>
+        </div>
+          <!-- admin board -->
+          <div class="row lg-full sm-full">
+            <div class="col lg-2of8 leftSide">
+              <div class="col menu">
+                <button type="button" class="btn btns" id="dashboaradBtn"><span class=" btnMenu">DASHBOARD</span></button>
+              </div>
+              <div class="col menu active">
+                <button type="button" class="btn btns"><span class=" btnMenu ">MEMBERS</span></button>
+              </div>
+              <div class="col menu ">
+                <button type="button" class="btn btns"><span class=" btnMenu active">EVENTS</span></button>
+              </div>
+              <div class="col menu ">
+                <button type="button" class="btn btns"><span class=" btnMenu">PARTNES</span></button>
+              </div>
+              <div class="col menu ">
+                <button type="button" class="btn btns"><span class=" btnMenu">LOG OUT</span></button>
+              </div>
+            </div>
+            <!-- EVENTS RIGHT SIDE-->
+            <div class="col lg-6of8 sm-full background-container" style="background-color:#eeeeee; padding:10px;">
+              <div class="events">
+                <p><span class="allMbm"><span class="badge">42</span> ALL EVENTS:</span><button type="button" class="btn memberAdd" id="addNewEvent">Add new <span class=" glyphicon glyphicon-plus" aria-hidden="true"></span></button> <br><br></p>
+                <!-- events -->
+                <div class="panel panel-default addNewDiv" id="addNewDiv" >
+
+                <div class="panel-body">
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="title">
+                    </div>
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="date">
+                    </div>
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="location">
+                    </div>
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="partners">
+                    </div>
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="tags">
+                    </div>
+                    <div class="form-group">
+                      <select class="" name="tags" class="form-control">
+                         <option selected disabled>number of seats</option>
+                         <option> &#60 30 </option>
+                         <option> &#60 50 </option>
+                         <option> &#60 100 </option>
+                         <option> &#60 300 </option>
+                         <option> &#60 400 </option>
+                         <option> &#60 500 </option>
+                         <option> &#60 1000 </option>
+                         <option> unlimited </option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <textarea name="name" class="form-control" placeholder="description" rows="9"></textarea> <br>
+                    <button type="button" class="form-control saveBtn">SAVE</button>
+                  </div>
+
+                </div>
+              </div>
+              <div class="hover-btn">
+               <button type="button" class="close" data-dismiss="alert">
+                  <span aria-hidden="true">×</span>
+                  <span class="sr-only">Close</span>
+               </button>
+            </div>
+
+                <div class="panel panel-default" style="">
+                <div class="panel-heading" style="height:80px;">
+                  <h3 style="float:left; padding:0px; margin-top:-5px; ">
+                  <span style="color:#cc0000;">WebTech, JavaScript <a href="#">edit</a></span> <br><i style=" float:left; padding:10px; margin-top:0px; font-size:12px; margin-left:35px;"><span style="color:#2b2b2b2;">Copenhagen, Kapelvej 7 </span><a href="#">edit</a></i></h3>
+                  <span style="float:right;">Tue, 12/12/12 <br><a href="#">edit</a></span></div>
+                <div class="panel-body">
+                  Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim. Phasellus fermentum in, dolor. Pellentesque facilisis. Nulla imperdiet sit amet magna. Vestibulum dapibus, mauris nec malesuada fames ac turpis velit, rhoncus eu, luctus et interdum adipiscing wisi. Aliquam erat ac ipsum. Integer aliquam purus. Quisque lorem tortor fringilla sed, vestibulum id, eleifend justo vel bibendum sapien massa ac turpis faucibus orci luctus non, consectetuer lobortis quis, varius in, purus. Integer ultrices posuere cubilia Curae, Nulla ipsum dolor lacus, suscipit adipiscing. Cum sociis natoque penatibus et ultrices volutpat. Nullam wisi ultricies a, gravida vitae, dapibus risus ante sodales lectus blandit eu, tempor diam pede cursus vitae, ultricies eu, faucibus quis, porttitor eros cursus lectus, pellentesque eget, bibendum a, gravida ullamcorper quam. Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus. Sed vel lectus. Ut sagittis, ipsum dolor quam.
+                  <a href="#">edit</a>
+                  <br><br>
+                  <div class="partners">
+                    <img src="img/startupweekend-logo.png" alt="" height="60px;" >
+                    <img src="img/techcrunch-logo.png" alt="" height="60px;" >
+                    <img src="img/websummit-logo.png" alt="" height="60px;" style="margin-left:50px;" >
+                    <a href="#">edit</a>
+                    <button type="button" class="btn btn-danger" style="float:right;">delete</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel panel-default" style="">
+              <div class="panel-heading" style="height:80px;">
+                <h3 style="float:left; padding:0px; margin-top:-5px; ">
+                <span style="color:#cc0000;">WebTech, JavaScript <a href="#">edit</a></span> <br><i style=" float:left; padding:10px; margin-top:0px; font-size:12px; margin-left:35px;"><span style="color:#2b2b2b2;">Copenhagen, Kapelvej 7 </span><a href="#">edit</a></i></h3>
+                <span style="float:right;">Tue, 12/12/12 <br><a href="#">edit</a></span></div>
+              <div class="panel-body">
+                Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim. Phasellus fermentum in, dolor. Pellentesque facilisis. Nulla imperdiet sit amet magna. Vestibulum dapibus, mauris nec malesuada fames ac turpis velit, rhoncus eu, luctus et interdum adipiscing wisi. Aliquam erat ac ipsum. Integer aliquam purus. Quisque lorem tortor fringilla sed, vestibulum id, eleifend justo vel bibendum sapien massa ac turpis faucibus orci luctus non, consectetuer lobortis quis, varius in, purus. Integer ultrices posuere cubilia Curae, Nulla ipsum dolor lacus, suscipit adipiscing. Cum sociis natoque penatibus et ultrices volutpat. Nullam wisi ultricies a, gravida vitae, dapibus risus ante sodales lectus blandit eu, tempor diam pede cursus vitae, ultricies eu, faucibus quis, porttitor eros cursus lectus, pellentesque eget, bibendum a, gravida ullamcorper quam. Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus. Sed vel lectus. Ut sagittis, ipsum dolor quam.
+                <a href="#">edit</a>
+                <br><br>
+                <div class="partners">
+                  <img src="img/websummit-logo.png" alt="" height="60px;" >
+                  <img src="img/techcrunch-logo.png" alt="" height="60px;" >
+                  <img src="img/startupweekend-logo.png" alt="" height="60px;" style="margin-left:50px;" >
+                  <a href="#">edit</a>
+                  <button type="button" class="btn btn-danger" style="float:right;">delete</button>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+  </div>
+</div>
+        <!-- footer-->
+        <!-- <div class="lg-full footer">
+          <i><p>&copy; 12/2016 - school project -  inaklmsterface design - KEA<p></i>
+        </div> -->
+
+      </div>
+    </div>
+    <div class="footer"></div>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="scripts/main.js"></script>
+
+  </body>
+</html>

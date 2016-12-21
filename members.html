@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>TechBase</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="css/flexbox-grid.css">
+  </head>
+  <body style="overflow-x:hidden;">
+    <!-- <div class="header"></div> -->
+    <div class="content">
+      <div class="row">
+        <div class="lg-full admin logo sm-full topSide">
+          <h2>
+            <a href="admin.html"><img src="img/svg/logo.svg" style="width: 150px;"  alt=""></a>
+          </h2>
+          <h1></h1>
+          <button type="button" class="btn logOut"><span class="glyphicon glyphicon-off" aria-hidden="true"></span> log out</button>
+        </div>
+          <!-- admin board -->
+          <div class="row lg-full sm-full">
+            <div class="col lg-2of8 leftSide">
+              <div class="col menu">
+                <button type="button" class="btn btns" id="dashboaradBtn"><span class=" btnMenu">DASHBOARD</span></button>
+              </div>
+              <div class="col menu active">
+                <button type="button" class="btn btns"><span class=" btnMenu active"id="displayMembers">MEMBERS</span></button>
+              </div>
+              <div class="col menu ">
+                <button type="button" class="btn btns"><span class=" btnMenu" id="displayEvents">EVENTS</span></button>
+              </div>
+              <div class="col menu ">
+                <button type="button" class="btn btns"><span class=" btnMenu">PARTNES</span></button>
+              </div>
+              <div class="col menu ">
+                <button type="button" class="btn btns"><span class=" btnMenu">LOG OUT</span></button>
+              </div>
+            </div>
+            <!-- EVENTS RIGHT SIDE-->
+            <div class="col lg-6of8 sm-full background-container" style="background-color:#eeeeee; padding:10px;">
+              <div class="events">
+                <p><span class="allMbm"><span class="badge">42</span> ALL MEMBERS:</span><button type="button" class="btn memberAdd" id="addNewEvent">Add new <span class=" glyphicon glyphicon-plus" aria-hidden="true"></span></button> <br><br></p>
+                <!-- events -->
+                <div class="panel panel-default addNewDiv" id="addNewDiv" >
+
+                <div class="panel-body">
+                  <div class="col-lg-6 col-lg-offset-3">
+                    <div class="form-group">
+                      <input type="text" placeholder="name"class="form-control" id="name">
+                    </div>
+                    <div class="form-group">
+                      <input type="text" placeholder="last name" class="form-control" id="lastName">
+                    </div>
+                    <div class="form-group">
+                      <input type="text" placeholder="username" class="form-control" id="username">
+                    </div>
+                    <div class="form-group">
+                      <input type="text" placeholder="password" class="form-control" id="password">
+                    </div>
+                    <button type="button" class="form-control saveBtn" id="saveMemberBtn" >SAVE</button>
+                  </div>
+
+                </div>
+              </div>
+
+                <div class="panel panel-default" style="">
+                  <div class="panel-body">
+                  <div class="row">
+                     <div class="col-md-3">
+                         <div id="name">
+
+                         </div>
+                     </div>
+                     <div class="col-md-3">
+                       <div id="lastName">
+
+                       </div>
+                     </div>
+                     <div class="col-md-3">
+                       <div id="username">
+
+                       </div>
+                     </div>
+                     <div class="col-md-3">
+                       <div id="password">
+
+                       </div>
+                     </div>
+                       <div class="hover-btn">
+                         <button type="button" class="close" data-dismiss="alert"><span class="deleteBtn">delete</span>
+                            <span aria-hidden="true">×</span>
+                            <span class="sr-only">Close</span>
+                         </button>
+                         <button type="button" class="close" data-dismiss="alert"><span class="editBtn">edit</span>
+                            <span aria-hidden="true"></span>
+                            <span class="sr-only">Close</span>
+                         </button>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer"></div>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="scripts/main.js"></script>
+    <script>
+    $( document ).ready(function() {
+     var urlParams = new URLSearchParams(window.location.search);
+     var name = urlParams.get('name'); // get the name from url
+
+     $.getJSON("./db/users.json", function(data){
+       //append correct data to the page
+         var result = data[name];
+         $('#name').text(result.title);
+         $('#lastName').text(result.date);
+         $('#username').text(result.location);
+      //   $('#password').text(users.password);
+     });
+   });
+    </script>
+    <script>
+    // MEMBERS
+  // $(document).on("click", "#saveMemberBtn", function(){
+  //   var name = $("#name").val();
+  //   var lastName = $("#lastName").val();
+  //   var username = $("#username").val();
+  //   var password = $("#password").val();
+  //   console.log(name, lastName, username, password);
+  //   //
+  //   var linkToApi = 'admin-api.php?cmd=save';
+  //     console.log(linkToApi);
+  //   //
+  //   // $.getJSON(linkToApi, function(jData){
+  //   //   console.log(jData);
+  //   //   // display result from the if else statement from api  - > if it's saved properly
+  //   //   // $('#showResult').html('<p class="">'+jData+'</p>');
+  //   // });
+  // });
+    </script>
+  </body>
+</html>

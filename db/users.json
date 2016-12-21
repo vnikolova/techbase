@@ -1,0 +1,23 @@
+{
+  "0" : {
+    "name":"Kasia",
+    "lastName":"Pieniazek",
+    "username":"kasiap19",
+    "email": "kasia@mail.com",
+    "password":"111"
+  },
+  "1" : {
+    "name":"Viktoryia",
+    "lastName":"Nikolova",
+    "email": "vik@mail.com",
+    "username":"Vik",
+    "password":"000"
+  },
+  "2" : {
+    "name":"Nobody",
+    "lastName":"At All",
+    "email": "admin@mail.com",
+    "username":"Admin",
+    "password":"admin"
+  }
+}
