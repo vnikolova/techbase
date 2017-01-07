@@ -344,7 +344,7 @@ span, img {
 }
 
 #loginPageWrapper {
-background-color: #E4E4E4;
+background-image: linear-gradient(to bottom, rgba(255,255,255,0.5) 0%,rgba(255,255,255,0.3) 100%),url('../img/background.jpg');
 }
 #register{
   display: none;
@@ -368,6 +368,7 @@ background-color: #E4E4E4;
   height: auto;
 
 }
+
 .logoTxtProfile{
   letter-spacing:4px;
   text-transform: uppercase;
@@ -399,8 +400,9 @@ background-color: #E4E4E4;
   background-color: #3aaaab;
 }
 .register{
-  float:right;
-  margin-right:20px;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
 }
 /* end login */
 .modal {

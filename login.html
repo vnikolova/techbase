@@ -12,9 +12,6 @@
 </head>
 
 <body id="loginPageWrapper" class="fade-in fast">
-    <div class="container">
-
-        <div class="col-lg-4 col-lg-offset-4 row">
           <!-- modal -->
 
           <div class="modal fade-scale" id="registerModal">
@@ -40,8 +37,8 @@
             </div><br>
 
             <!-- login -->
-
-            <div id="login">
+            <div class="row center">
+              <div id="login" class="sm-5of8 lg-1of3">
 
                 <div class="box">
                     <form id="loginForm" action="./" method="post" name="loginForm">
@@ -67,18 +64,15 @@
                             <button type="button" class="btn form-control buttons" id="loginSubmit"><span class="loginBtnTxt">SIGN IN</span></button>
                         </div>
                     </form>
+                    <!-- register bottom -->
+                      <a id="registerBtn" class="register">Are you a member? Register here.</a>
                 </div>
-                <!-- register bottom -->
-                <div class="btn-group btn-group-justified" role="group" aria-label="...">
-                    <div class="btn-group" role="group">
-                        <button type="button" class="btn btn-default" id="registerBtn"><span class="register">register</span></button>
-                    </div>
-                </div>
+
             </div>
             <!-- end of login -->
 
             <!-- register -->
-            <div id="register">
+            <div id="register" class="lg-1of3 sm-5of8">
                 <div class="box ">
                     <form id="registerForm" action="./" method="post" name="registerForm">
                         <br>
@@ -111,19 +105,15 @@
                             <button type="button" class="btn form-control buttons" id="submitRegisterBtn"><span class="loginBtnTxt">REQUEST TO REGISTER</span></button>
                         </div>
                     </form>
+                    <!-- register bottom -->
+                    <a id="loginBtn" class="register">Already a user? Log in.</a>
+                </div>
 
-                </div>
-                <!-- register bottom -->
-                <div class="btn-group btn-group-justified" role="group" aria-label="...">
-                    <div class="btn-group" role="group">
-                        <button type="button" class="btn btn-default" id="loginBtn"><span class="register">login</span></button>
-                    </div>
-                </div>
+
 
             </div>
             <!-- end of register -->
-        </div>
-    </div>
+          </div>
 
     <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
