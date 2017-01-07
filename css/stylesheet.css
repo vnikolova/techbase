@@ -251,7 +251,8 @@ span, img {
 	height: 200px;
 	width: 200px;
 	border-radius: 100px;
-	background-color: white;
+	background-image:url('../img/Startup-Events.png');
+	margin-left: 60px;
 }
 .event-result-info:hover {
   background-color: #EFEFEF;
