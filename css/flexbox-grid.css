@@ -51,7 +51,9 @@ html, body {
 .col-6of8 {
   flex: 0 0 75%;
 }
-
+.col-1of5 {
+  flex: 0 0 20%;
+}
 /* row alignment */
 .start {
   align-items: flex-start;
