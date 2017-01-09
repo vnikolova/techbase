@@ -78,13 +78,15 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 70vh;
+  height: 80vh;
   box-shadow: 1px 8px 10px #E4E4E4;
 
 }
 
 .upcoming-event {
     color: white;
+    background: rgba(0,0,0,0.2);
+    padding-bottom: 50px;
 
 }
 .upcoming-event h1 {
@@ -112,8 +114,9 @@ body {
 }
 
 .date-img {
-  width: 65%;
-  padding-left:25%;
+  width: 80px;
+  display: block;
+  margin: 0 auto;
 }
 .button {
   background: transparent;
@@ -176,6 +179,7 @@ span, img {
   width: 16px;
   height: 16px;
   margin-top: 25px;
+  cursor: pointer;
 }
 
 .arrow-left {
